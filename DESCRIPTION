@@ -1,9 +1,10 @@
 Package: aprlab03
 Title: Advanced R Programming Lab 03
 Version: 0.0.0.9000
-Authors@R: 
-    c(person("Sebastian","Soriano Perez",,"sebso@student.liu.se", role = c("aut", "cre")),
-      person("Yuanyu","Xia",,"yuaxi059@student.liu.se", role = "aut"))
+Authors@R: c(
+    person("Sebastián","Soriano Pérez",,"sebso409@student.liu.se", role = c("aut", "cre")),
+    person("Yuanyu","Xia",,"yuaxi059@student.liu.se", role = "aut")
+  )
 Description: A package implementing the Euclidean algorithm for finding the greatest common divisor and Dijkstra's shortest path algorithm.
 License: MIT + file LICENSE
 Encoding: UTF-8
@@ -12,3 +13,6 @@ Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Config/roxygen2/version: 8.1.0
+Depends: 
+    R (>= 3.5)
+LazyData: true

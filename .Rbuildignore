@@ -1,6 +1,7 @@
 ^renv$
 ^renv\.lock$
-^\.github$
-^LICENSE\.md$
-^.*\.Rproj$
+^\.Rprofile$
+^aprlab03\.Rproj$
 ^\.Rproj\.user$
+^LICENSE\.md$
+^\.github$

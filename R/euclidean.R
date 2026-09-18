@@ -1,14 +1,17 @@
 #' Euclidean algorithm
 #'
 #' This function computes the greatest common divisor (GCD) of two integers using the Euclidean algorithm.
+#'
 #' @param a A numeric scalar representing the first integer.
 #' @param b A numeric scalar representing the second integer.
 #' @return A numeric scalar representing the greatest common divisor (GCD) of a and b.
 #' @references \url{https://en.wikipedia.org/wiki/Euclidean_algorithm}
+#' @examples
+#' euclidean(123612, 13892347912)
+#' euclidean(100, 1000)
 #' @export
-
 euclidean <- function(a, b) {
-  # Returns the greatest common divisor (GCD) of a and b using the Euclidean algorithm.
+  # Validates inputs
   tol <- .Machine$double.eps ^ 0.5
   if (
     !is.numeric(a) || length(a) != 1 || abs(a - round(a)) > tol

@@ -17,6 +17,10 @@ A numeric scalar representing the greatest common divisor (GCD) of a and b.
 \description{
 This function computes the greatest common divisor (GCD) of two integers using the Euclidean algorithm.
 }
+\examples{
+euclidean(123612, 13892347912)
+euclidean(100, 1000)
+}
 \references{
 \url{https://en.wikipedia.org/wiki/Euclidean_algorithm}
 }
