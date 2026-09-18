@@ -1,5 +1,5 @@
 euclidean <- function(a, b) {
-  # Returns the greatest common divisor (GCD) of a and b using the Euclidean algorithm.
+  # 1.1.1 Returns the greatest common divisor (GCD) of a and b using the Euclidean algorithm.
   tol <- .Machine$double.eps ^ 0.5
   if (
     !is.numeric(a) || length(a) != 1 || abs(a - round(a)) > tol
