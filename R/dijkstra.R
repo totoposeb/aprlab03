@@ -1,7 +1,13 @@
+#' Dijkstra's shortest path algorithm
+#'
+#' Computes the shortest distance from `init_node` to every node in `graph`.
+#'
+#' @param graph A data.frame with columns `v1`, `v2` (edge from v1 to v2) and `w` (weight).
+#' @param init_node Numeric scalar, the starting node.
+#' @return A numeric vector with the shortest distance to each node.
+#' @references <https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm>
+#' @export
 dijkstra <- function(graph, init_node) {
-  # 1.1.2 Returns the shortest path from init_node to every other node in graph
-  # using the Dijkstra algorithm.
-
   # Checks graph is a data.frame with required columns
   stopifnot(
     "graph must be a data.frame!" = is.data.frame(graph),

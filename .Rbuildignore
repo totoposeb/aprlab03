@@ -1,7 +1,6 @@
 ^renv$
 ^renv\.lock$
 ^\.Rprofile$
-^scripts$
 ^aprlab03\.Rproj$
 ^\.Rproj\.user$
 ^LICENSE\.md$
