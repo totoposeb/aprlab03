@@ -17,6 +17,10 @@ A numeric vector with the shortest distance to each node.
 \description{
 Computes the shortest distance from \code{init_node} to every node in \code{graph}.
 }
+\examples{
+dijkstra(wiki_graph, 1)
+dijkstra(wiki_graph, 3)
+}
 \references{
 \url{https://en.wikipedia.org/wiki/Dijkstra\%27s_algorithm}
 }
