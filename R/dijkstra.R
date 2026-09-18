@@ -6,6 +6,9 @@
 #' @param init_node Numeric scalar, the starting node.
 #' @return A numeric vector with the shortest distance to each node.
 #' @references <https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm>
+#' @examples
+#' dijkstra(wiki_graph, 1)
+#' dijkstra(wiki_graph, 3)
 #' @export
 dijkstra <- function(graph, init_node) {
   # Checks graph is a data.frame with required columns

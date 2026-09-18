@@ -6,6 +6,9 @@
 #' @param b A numeric scalar representing the second integer.
 #' @return A numeric scalar representing the greatest common divisor (GCD) of a and b.
 #' @references \url{https://en.wikipedia.org/wiki/Euclidean_algorithm}
+#' @examples
+#' euclidean(123612, 13892347912)
+#' euclidean(100, 1000)
 #' @export
 euclidean <- function(a, b) {
   # Validates inputs
