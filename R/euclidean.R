@@ -18,17 +18,17 @@ euclidean <- function(a, b) {
     || !is.numeric(b) || length(b) != 1 || abs(b - round(b)) > tol) {
     stop("a and b must be scalar integers!")
   }
-  
+
   # Converts the numbers to positive. Negative numbers have the same GCDs.
   a <- abs(round(a))
   b <- abs(round(b))
-  
+
   # Executes the Euclidean algorithm.
   while (b != 0) {
     temp <- b
     b <- a %% b
     a <- temp
   }
-  
+
   return(a)
 }
